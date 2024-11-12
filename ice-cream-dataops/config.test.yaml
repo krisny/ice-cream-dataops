@@ -3,7 +3,9 @@ environment:
   project: cdf-bootcamp-03-test
   type: test
   selected:
-  - modules/
+  - modules/bootcamp/data_foundation
+  - modules/bootcamp/ice_cream_api
+  - modules/bootcamp/use_cases/oee
 
 variables:
   modules:
@@ -21,7 +23,7 @@ variables:
       data_developer_source_id: 72842903-e4b4-4cd5-80a6-3a3abfcc3d4b
       data_pipeline_oee_source_id: e377006b-8e13-4f38-8d6b-c07be5d5c793
       readwrite_source_id: b7b46ae1-f383-478f-bf47-f9972cc69e02
-      #readonly_source_id: <NotSet>
+      readonly_source_id: 56398707-b25c-4f6b-987f-97fd47bcda80
       icapi_extractors_source_id: ed0e516d-d986-4ca9-90ee-a884a4aca040
       
       # Client Ids
