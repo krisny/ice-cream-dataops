@@ -81,7 +81,7 @@ def run_extractor(
         upload_queue.upload()
 
 def handle(client: CogniteClient = None, data = None):
-    config_file_path = "extractor_config.yaml"
+    config_file_path = "extractor_config.Function.yaml"
 
     # Can't pass parameters to the Extractor, so create environment variables
     if data:

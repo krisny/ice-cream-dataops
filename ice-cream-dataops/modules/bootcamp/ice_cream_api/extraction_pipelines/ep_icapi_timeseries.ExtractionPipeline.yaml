@@ -1,4 +1,4 @@
-externalId: ep_icapi_timeseries.yaml
+externalId: ep_icapi_timeseries
 name: Ice Cream API Time Series
 description: Time series source extraction pipeline for the Ice Cream API
 source: Ice Cream API
