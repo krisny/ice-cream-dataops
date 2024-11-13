@@ -3,6 +3,7 @@ version: '1'
 workflowDefinition:
   tasks:
   - externalId: icapi_assets_extractor
+    name: Run asset extractor
     type: function
     parameters:
       function:
@@ -11,6 +12,7 @@ workflowDefinition:
     timeout: 3600
     onFailure: abortWorkflow
   - externalId: create_asset_hierarchy
+    name: Create asset hierarchy
     type: transformation
     parameters:
       transformation:
@@ -22,6 +24,7 @@ workflowDefinition:
     dependsOn: 
       - externalId: icapi_assets_extractor
   - externalId: icapi_timeseries_extractor
+    name: Extract time series
     type: function
     parameters:
       function:
@@ -30,6 +33,7 @@ workflowDefinition:
     timeout: 3600
     onFailure: abortWorkflow
   - externalId: icapi_datapoints_extractor
+    name: Extract data points
     type: function
     parameters:
       function:
@@ -40,6 +44,7 @@ workflowDefinition:
     dependsOn: 
       - externalId: icapi_timeseries_extractor
   - externalId: icapi_ts_assets_contextualization
+    name: Connect time series to assets
     type: transformation
     parameters:
       transformation:
@@ -52,6 +57,7 @@ workflowDefinition:
       - externalId: icapi_timeseries_extractor
       - externalId: create_asset_hierarchy
   - externalId: oee_timeseries
+    name: OEE Calculations
     type: function
     parameters:
       function:
