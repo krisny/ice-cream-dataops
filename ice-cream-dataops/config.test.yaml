@@ -34,6 +34,6 @@ variables:
   icapi_extractors_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET} # replaced by .env
   # Variables shared by modules
   icapi_ds_external_id: ds_icapi
-  #use_cases: 
+  #use_cases: #
   #  oee:
   uc_oee_ds_external_id: ds_uc_oee
