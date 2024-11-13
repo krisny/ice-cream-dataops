@@ -55,7 +55,7 @@ workflowDefinition:
     onFailure: abortWorkflow
     dependsOn: 
       - externalId: icapi_timeseries_extractor
-      - externalId: create_asset_hierarchy
+      - externalId: tr-create_asset_hierarchy
   - externalId: oee_timeseries
     name: OEE Calculations
     type: function
@@ -67,4 +67,4 @@ workflowDefinition:
     onFailure: abortWorkflow
     dependsOn: 
       - externalId: icapi_datapoints_extractor
-      - externalId: icapi_ts_assets_contextualization
+      - externalId: tr-icapi_ts_assets_contextualization
