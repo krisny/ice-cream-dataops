@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-cognite-toolkit = "^0.3.7"
+cognite-toolkit = "0.3.4"
 
 
 [build-system]
