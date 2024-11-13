@@ -10,7 +10,7 @@ on:
 env:
   PYTHON_VERSION: '3.11'
   TOOLKIT_VERSION: '0.3.4'
-  BOOTCAMP_NUMBER: 03
+  BOOTCAMP_NUMBER: '03'
 jobs:
   build-modules:
     strategy:
